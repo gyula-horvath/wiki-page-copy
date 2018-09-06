@@ -1,0 +1,23 @@
+/* --- Helping colors ---*/
+
+header {
+  background-color: rgba(215, 44, 44, 0.5);
+}
+
+footer {
+  background-color: rgba(215, 44, 44, 0.5);
+}
+
+.wikipanel {
+  background-color: rgba(215, 129, 44, 0.5);
+}
+
+.article {
+  background-color: rgba(28, 129, 44, 0.5);
+}
+
+/* --- General Rules --- */
+
+* {
+  box-sizing: border-box;
+}
