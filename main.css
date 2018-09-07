@@ -21,3 +21,8 @@ footer {
 * {
   box-sizing: border-box;
 }
+
+.search-button {
+  background: url(assets/search-icon.svg) no-repeat center;
+  color: transparent;
+}
