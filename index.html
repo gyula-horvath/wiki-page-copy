@@ -24,6 +24,48 @@
       <li><a href="#">Log in</a></li>
       
     </ul>
+    
+    <nav class="tabs">
+        
+        <div class="right-navbar">
+          
+          <ul>
+            
+            <li class="active"><a href="#">Article</a></li>
+            
+            <li><a href="#">Talk</a></li>
+            
+          </ul>
+          
+        </div>
+        
+        <div class="left-navbar">
+          
+          <ul>
+            
+            <li class="active"><a href="#">Read</a></li>
+            
+            <li><a href="#">Edit</a></li>
+            
+            <li><a href="#">View history</a></li>
+            
+          </ul>
+          
+        </div>
+      
+        <div class="search-container">
+            
+          <from action="/action_page.php">
+          
+            <input type="text" placeholder="Search Wikipedia" title="Search Wikipedia [alt-shift-f]">
+            <input class="search-button" type="submit" name="go" value="Go" title="Go to page with this exact name if it exists">
+              
+          </from>
+            
+        </div>
+      
+      </nav>
+    
   </header>
   
   <main class="wiki-content">
@@ -32,7 +74,7 @@
       
       <img class="wiki-logo" src="assets/enwiki-2x.png">
       
-      <div class="page-nav-box">
+      <div class="page-nav box">
       
         <div class="page-nav">
         
@@ -58,7 +100,7 @@
         
       </div>
       
-      <div class="page-interactions">
+      <div class="page-interactions box">
         
         <h3>Interactions</h3>
         
@@ -82,7 +124,7 @@
         
       </div>
       
-      <div class="page-tools">
+      <div class="page-tools box">
         
         <h3>Tools</h3>
         
@@ -112,7 +154,7 @@
         
       </div>
       
-      <div class="page-print-export">
+      <div class="page-print-export box">
         
         <h3>Print/export</h3>
         
@@ -132,9 +174,9 @@
         
       </div>
       
-      <div class="page-lang">
+      <div class="page-lang box">
         
-        <button class="lang-settings" title="Language settings"></button>
+        <a href="#" class="lang-settings" title="Language settings"><i class="fa fa-cog"></i></a>
         
         <h3>Languages</h3>
         
@@ -159,47 +201,6 @@
     </div>
   
     <div class="article">
-    
-      <nav class="tabs">
-        
-        <div class="right-navbar">
-          
-          <ul>
-            
-            <li><a class="active" href="#">Article</a></li>
-            
-            <li><a href="#">Talk</a></li>
-            
-          </ul>
-          
-        </div>
-        
-        <div class="left-navbar">
-          
-          <ul>
-            
-            <li><a class="active" href="#">Read</a></li>
-            
-            <li><a href="#">Edit</a></li>
-            
-            <li><a href="#">View history</a></li>
-            
-          </ul>
-          
-          <div class="search-container">
-            
-            <from action="/action_page.php">
-          
-              <input type="text" placeholder="Search Wikipedia" title="Search Wikipedia [alt-shift-f]">
-              <input class="search-button" type="submit" name="go" value="Go" title="Go to page with this exact name if it exists">
-              
-            </from>
-            
-          </div>
-          
-        </div>
-      
-      </nav>
       
       <h1>Communist Mutants from Space</h1>
       
@@ -445,7 +446,7 @@
     </div>
   
   </main>
-  
+  <!--
   <footer>
     
     <small>This page was last edited on 5 April 2018, at 15:22 (UTC).</small>
@@ -470,6 +471,6 @@
       
     </div>
     
-  </footer>
+  </footer>-->
 </body>
 </html>
