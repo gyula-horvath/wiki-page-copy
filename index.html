@@ -31,9 +31,9 @@
           
           <ul>
             
-            <li class="active"><a href="#">Article</a></li>
+            <li class="active"><a class="active-tab" href="#">Article</a></li>
             
-            <li><a href="#">Talk</a></li>
+            <li class="inactive"><a href="#">Talk</a></li>
             
           </ul>
           
@@ -43,11 +43,11 @@
           
           <ul>
             
-            <li class="active"><a href="#">Read</a></li>
+            <li class="active"><a class="active-tab class="inactive"" href="#">Read</a></li>
             
-            <li><a href="#">Edit</a></li>
+            <li class="inactive"><a href="#">Edit</a></li>
             
-            <li><a href="#">View history</a></li>
+            <li class="inactive"><a href="#">View history</a></li>
             
           </ul>
           
@@ -74,130 +74,134 @@
       
       <img class="wiki-logo" src="assets/enwiki-2x.png">
       
-      <div class="page-nav box">
+      <div class="panel-lists">
       
-        <div class="page-nav">
-        
-          <ul>
-          
-            <li><a href="#">Main page</a></li>
-          
-            <li><a href="#">Contents</a></li>
-            
-            <li><a href="#">Featured content</a></li>
-            
-            <li><a href="#">Current events</a></li>
-            
-            <li><a href="#">Random article</a></li>
-            
-            <li><a href="#">Donate to Wikipedia</a></li>
-            
-            <li><a href="#">Wikipedia store</a></li>
-          
-          </ul>
-        
-        </div>
-        
-      </div>
+        <div class="page-nav box">
       
-      <div class="page-interactions box">
+          <div class="page-nav">
         
-        <h3>Interactions</h3>
-        
-        <div class="interactions-list">
+            <ul>
           
-          <ul>
-            
-            <li><a href="#">Help</a></li>
-            
-            <li><a href="#">About Wikipedia</a></li>
-            
-            <li><a href="#">Community portal</a></li>
-            
-            <li><a href="#">Recent changes</a></li>
-            
-            <li><a href="#">Contact page</a></li>
-            
-          </ul>
+              <li><a href="#">Main page</a></li>
           
-        </div>
-        
-      </div>
-      
-      <div class="page-tools box">
-        
-        <h3>Tools</h3>
-        
-        <div class="tools-list">
+              <li><a href="#">Contents</a></li>
+            
+              <li><a href="#">Featured content</a></li>
+            
+              <li><a href="#">Current events</a></li>
+            
+              <li><a href="#">Random article</a></li>
+            
+              <li><a href="#">Donate to Wikipedia</a></li>
+            
+              <li><a href="#">Wikipedia store</a></li>
           
-          <ul>
-            
-            <li><a href="#">What links here</a></li>
-            
-            <li><a href="#">Related changes</a></li>
-            
-            <li><a href="#">Upload file</a></li>
-            
-            <li><a href="#">Special pages</a></li>
-            
-            <li><a href="#">Permanent link</a></li>
-            
-            <li><a href="#">Page information</a></li>
-            
-            <li><a href="#">Wikidata item</a></li>
-            
-            <li><a href="#">Cite this page</a></li>
-            
-          </ul>
-          
-        </div>
+            </ul>
         
-      </div>
-      
-      <div class="page-print-export box">
-        
-        <h3>Print/export</h3>
-        
-        <div class="print-export-list">
-          
-          <ul>
-          
-            <li><a href="#">Create a book</a></li>
-          
-            <li><a href="#">Download as PDF</a></li>
-          
-            <li><a href="#">Printable version</a></li>
-            
-          </ul>
-          
-        </div>
-        
-      </div>
-      
-      <div class="page-lang box">
-        
-        <a href="#" class="lang-settings" title="Language settings"><i class="fa fa-cog"></i></a>
-        
-        <h3>Languages</h3>
-        
-        <div class="lang-list">
-          
-          <ul>
-            
-            <li><a href="#">Español</a></li>
-            
-          </ul>
-          
-          <div class="edit-langlinks-box">
-            <span class="edit-langlinks">
-              <a href="#" title="Edit interlanguage links">Edit links</a>
-            </span>
           </div>
-          
-        </div>
         
-      </div>
+        </div>
+      
+        <div class="page-interactions box">
+        
+          <h3>Interactions</h3>
+        
+          <div class="interactions-list">
+          
+            <ul>
+            
+              <li><a href="#">Help</a></li>
+            
+              <li><a href="#">About Wikipedia</a></li>
+            
+              <li><a href="#">Community portal</a></li>
+            
+              <li><a href="#">Recent changes</a></li>
+            
+              <li><a href="#">Contact page</a></li>
+            
+            </ul>
+          
+          </div>
+        
+        </div>
+      
+        <div class="page-tools box">
+        
+          <h3>Tools</h3>
+        
+          <div class="tools-list">
+          
+            <ul>
+            
+              <li><a href="#">What links here</a></li>
+            
+              <li><a href="#">Related changes</a></li>
+            
+              <li><a href="#">Upload file</a></li>
+            
+              <li><a href="#">Special pages</a></li>
+            
+              <li><a href="#">Permanent link</a></li>
+            
+              <li><a href="#">Page information</a></li>
+            
+              <li><a href="#">Wikidata item</a></li>
+            
+              <li><a href="#">Cite this page</a></li>
+            
+            </ul>
+          
+          </div>
+        
+        </div>
+      
+        <div class="page-print-export box">
+        
+          <h3>Print/export</h3>
+        
+          <div class="print-export-list">
+          
+            <ul>
+          
+              <li><a href="#">Create a book</a></li>
+          
+              <li><a href="#">Download as PDF</a></li>
+          
+              <li><a href="#">Printable version</a></li>
+            
+            </ul>
+          
+          </div>
+        
+        </div>
+      
+        <div class="page-lang box">
+        
+          <a href="#" class="lang-settings" title="Language settings"><i class="fa fa-cog"></i></a>
+        
+          <h3>Languages</h3>
+        
+          <div class="lang-list">
+          
+            <ul>
+            
+              <li><a href="#">Español</a></li>
+            
+            </ul>
+          
+            <div class="edit-langlinks-box">
+              <span class="edit-langlinks">
+                <a href="#" title="Edit interlanguage links">Edit links</a>
+              </span>
+            </div>
+          
+          </div>
+        
+        </div>
     
+      </div>
+        
     </div>
   
     <div class="article">
