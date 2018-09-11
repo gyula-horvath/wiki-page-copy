@@ -47,6 +47,11 @@ a:hover{
   text-decoration: underline
 }
 
+strong {
+  font-weight: 700;
+  color: rgba(0, 0, 0, .9);
+}
+
 /* --- HEADER STYLES/TYPOGRAPHY --- */
 
 
@@ -160,14 +165,22 @@ header {
 }
 
 .panel-lists {
-  padding-left: 1.5rem;
-  padding-top: 2rem;
+  padding: 1.5rem 1rem 0 2rem;
   font-size: .75rem;
   line-height: 1.5;
 }
 
 .box {
   margin-bottom: 1rem;
+}
+
+.box h3:after {
+  display: block;
+  content: '';
+  height: 1px;
+  width: 100%;
+  background-color: transparent;
+  background-image: linear-gradient(to right, transparent, rgba(170, 170, 170, .7), transparent);
 }
 
 .fa-cog {
@@ -190,4 +203,104 @@ header {
   border-right: 0px;
   border-top: 0px;
   padding: 1rem;
+}
+
+h1,
+h2 {
+  font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+}
+
+h1 {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.article h3 {
+  font-weight: 700;
+}
+
+.edit-button {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+/* --- Info Table Styles --- */
+
+table {
+  border-collapse: collapse;
+  border: 1px solid rgba(170, 170, 170);
+  float: right;
+}
+
+tr td {
+  padding: 0 .2rem .5rem;
+  font-size: .8rem;
+  text-align: left;
+}
+
+th img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+th figcaption {
+  font-size: .7rem;
+  padding-bottom: .5rem;
+}
+
+.title {
+  padding: .5rem 1rem;
+  text-align: center;
+  font-size: .83rem;
+  font-weight: 700;
+  font-style: italic
+}
+
+.info-type {
+  font-weight: 700;
+}
+
+/* --- Contents Menu Styles --- */
+
+.contents-box {
+  padding: 0 0 0 2rem ;
+  border: 1px solid rgba(170, 170, 170);
+  width: 12rem;
+  position: relative;
+}
+
+.contents-title h2 {
+  font-size: 1rem;
+  font-family: sans-serif;
+  font-weight: 700;
+  padding: .5rem 0;
+}
+
+.contents-toggle::before {
+  content: '[';
+  color: rgba(0, 0,0);
+}
+
+.contents-toggle {
+  color: #0645ad;
+  position: absolute;
+  right: 3rem;
+  top: .5rem;
+}
+
+.contents-toggle::after {
+  content: ']';
+  color: rgba(0, 0, 0);
+}
+
+.primary-list li {
+  padding-bottom: .5rem;
+}
+
+.secondary-list li {
+  padding: .5rem 0 0 2rem;
 }
