@@ -31,6 +31,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  line-height: 1.5;
 }
 
 body {
@@ -50,6 +51,10 @@ a:hover{
 strong {
   font-weight: 700;
   color: rgba(0, 0, 0, .9);
+}
+
+h1, h2, .article h3, p, ol {
+  margin-bottom: 1rem;
 }
 
 /* --- HEADER STYLES/TYPOGRAPHY --- */
@@ -110,13 +115,13 @@ strong {
 .search-container input {
   border: none;
   padding-left: .2rem;
-  height: 1.4rem;
 }
 
 .search-button {
   background: url(assets/search-icon.svg) no-repeat center;
   color: transparent;
   float: right;
+  height: 1.56rem
 }
 
 .active {
@@ -192,6 +197,23 @@ header {
   color: rgba(70, 70, 70);
 }
 
+.edit-langlinks-box {
+  text-align: right;
+  background-image: url(assets/edit-pencil.png) no-repeat;
+}
+
+.edit-langlinks a {
+  color: rgba(100, 100, 100);
+}
+
+.edit-langlinks a::before {
+  display: inline-block;
+  background: url(assets/edit-pencil.png) no-repeat left top;
+  height: 11px;
+  width: 11px;
+  content: '';
+}
+
 /* --- ARTICLE STYLES --- */
 
 .article {
@@ -208,24 +230,67 @@ header {
 h1,
 h2 {
   font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+  border-bottom: 1px solid #a2a9b1;
 }
 
 h1 {
   font-size: 2rem;
   font-style: italic;
+  padding: .5rem 0 .2rem;
 }
-
 h2 {
   font-size: 1.5rem;
+  padding-bottom: .2rem;
+  padding-top: 1rem;
 }
 
 .article h3 {
   font-weight: 700;
+  padding-top: 1rem;
+}
+
+.from-wikipedia {
+  display: block;
+  margin-bottom: 2rem;
+  font-size: .8rem;
 }
 
 .edit-button {
   font-weight: 300;
   font-size: 1rem;
+}
+
+#Story {
+  overflow: hidden;
+}
+
+#Gameplay {
+  overflow: hidden;
+}
+
+picture {
+  width: 13rem;
+  float: left;
+  border: 1px solid rgba(190, 190, 190);
+  padding: .2rem;
+  margin: 0 1rem 1rem 0
+}
+
+picture img {
+  width: 12.4rem;
+}
+
+picture figcaption {
+  font-size: .8rem; 
+  padding-top: .2rem;
+}
+
+.enlarge a {
+  display: block;
+  background: url(assets/enlarge-icon.svg) no-repeat center;
+  height: 11px;
+  width: 15px;
+  float: right;
 }
 
 /* --- Info Table Styles --- */
@@ -234,6 +299,9 @@ table {
   border-collapse: collapse;
   border: 1px solid rgba(170, 170, 170);
   float: right;
+  margin-left: 1rem;
+  clear: right;
+  width: 22rem;
 }
 
 tr td {
@@ -278,6 +346,8 @@ th figcaption {
   font-family: sans-serif;
   font-weight: 700;
   padding: .5rem 0;
+  margin: 0;
+  border: none;
 }
 
 .contents-toggle::before {
