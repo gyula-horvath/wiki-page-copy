@@ -15,12 +15,8 @@ body {
   line-height: 1.5;
 }
 
-html {
-  position: relative;
-}
-
 body {
-  background-color: rgba(246, 246, 246);
+  background-color: rgb(246, 246, 246);
 }
 
 a {
@@ -40,6 +36,7 @@ strong {
 
 h1, h2, .article h3, p, ol {
   margin-bottom: 1rem;
+  font-size: .9rem;
 }
 
 /* --- HEADER STYLES/TYPOGRAPHY --- */
@@ -71,7 +68,7 @@ h1, h2, .article h3, p, ol {
 .left-navbar ul {
   background-color: transparent;
   background-image: linear-gradient(transparent, rgba(167, 215, 249, .3));
-  font-size: .8rem
+  font-size: .8rem;
 }
 
 .right-navbar {
@@ -106,14 +103,14 @@ h1, h2, .article h3, p, ol {
   background: url(assets/search-icon.svg) no-repeat center;
   color: transparent;
   float: right;
-  height: 1.56rem
+  height: 1.56rem;
 }
 
 .active {
   border-left: 1px solid #a7d7f9;
-  background-color: rgba(246, 246, 246);
-  border-bottom: 2px solid rgba(255, 255, 255);
-  background-image: linear-gradient(transparent, rgba(255, 255, 255));
+  background-color: rgb(246, 246, 246);
+  border-bottom: 2px solid rgb(255, 255, 255);
+  background-image: linear-gradient(transparent, rgb(255, 255, 255));
 }
 
 .active a:hover {
@@ -174,21 +171,20 @@ header {
 }
 
 .fa-cog {
-  color: rgba(100, 100, 100);
+  color: rgb(100, 100, 100);
   float: right;
 }
 
 .fa-cog:hover {
-  color: rgba(70, 70, 70);
+  color: rgb(70, 70, 70);
 }
 
 .edit-langlinks-box {
   text-align: right;
-  background-image: url(assets/edit-pencil.png) no-repeat;
 }
 
 .edit-langlinks a {
-  color: rgba(100, 100, 100);
+  color: rgb(100, 100, 100);
 }
 
 .edit-langlinks a::before {
@@ -209,7 +205,7 @@ header {
   border-right: 0px;
   border-top: 0px;
   padding: 1rem;
-  background-color: rgba(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 h1,
@@ -246,19 +242,19 @@ h2 {
   font-size: 1rem;
 }
 
-picture {
+.gameplay-pic {
   width: 13rem;
   float: left;
-  border: 1px solid rgba(190, 190, 190);
+  border: 1px solid rgb(190, 190, 190);
   padding: .2rem;
-  margin: 0 1rem 1rem 0
+  margin: 0 1rem 1rem 0;
 }
 
-picture img {
+.gameplay-pic img {
   width: 12.4rem;
 }
 
-picture figcaption {
+.gameplay-pic figcaption {
   font-size: .8rem; 
   padding-top: .2rem;
 }
@@ -278,7 +274,7 @@ picture figcaption {
 }
 
 .external-ref li span {
-  color: rgba(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 .external {
@@ -290,7 +286,7 @@ picture figcaption {
   height: 11px;
   width: 13px;
   background: url(assets/let%C3%B6lt%C3%A9s.svg) no-repeat right;
-  content: ''
+  content: '';
 }
 
 .internal-ref li {
@@ -310,11 +306,16 @@ sup {
   margin-top: 1rem;
   text-align: left;
   clear: both;
-  background-color: rgba(246, 246, 246);
+  background-color: rgb(246, 246, 246);
+}
+
+.cat-links a {
+  font-size: .9rem;
 }
 
 .categories {
   display: inline;
+  font-size: .9rem;
 }
 
 .categories li {
@@ -331,7 +332,7 @@ sup {
 
 table {
   border-collapse: collapse;
-  border: 1px solid rgba(170, 170, 170);
+  border: 1px solid rgb(170, 170, 170);
   float: right;
   margin-left: 1rem;
   clear: right;
@@ -359,7 +360,7 @@ th figcaption {
   text-align: center;
   font-size: .83rem;
   font-weight: 700;
-  font-style: italic
+  font-style: italic;
 }
 
 .info-type {
@@ -370,18 +371,18 @@ th figcaption {
 
 .contents-box {
   padding: 0 0 0 .5rem ;
-  border: 1px solid rgba(170, 170, 170);
+  border: 1px solid rgb(170, 170, 170);
   width: 12rem;
   position: relative;
-  background-color: rgba(246, 246, 246);
+  background-color: rgb(246, 246, 246);
 }
 
 .primary-list {
-  padding-bottom: .5rem
+  padding-bottom: .5rem;
 }
 
 .contents-title h2 {
-  font-size: 1rem;
+  font-size: .9rem;
   font-family: sans-serif;
   font-weight: 700;
   padding: .5rem 1.5rem;
@@ -391,19 +392,19 @@ th figcaption {
 
 .contents-toggle::before {
   content: '[';
-  color: rgba(0, 0,0);
+  color: rgb(0, 0,0);
 }
 
 .contents-toggle {
   color: #0645ad;
   position: absolute;
-  right: 3rem;
-  top: .5rem;
+  right: 3.4rem;
+  top: .3rem;
 }
 
 .contents-toggle::after {
   content: ']';
-  color: rgba(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 .primary-list li {
@@ -414,9 +415,17 @@ th figcaption {
   padding: .5rem 0 0 2rem;
 }
 
+.contents-link {
+  font-size: 0;
+}
+
+.contents-link span {
+  font-size: .9rem;
+}
+
 .contents-number {
-  padding-right: .25rem;
-  color: rgba(0, 0, 0)
+  padding-right: .5rem;
+  color: rgb(0, 0, 0);
 }
 
 /* --- Footer Styles  --- */
